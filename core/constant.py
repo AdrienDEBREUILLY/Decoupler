@@ -1,0 +1,49 @@
+PROGRAM_NAME = "Decoupleur"
+VERSION = "1.1"
+DESCRIPTION = ""
+
+# data base connection
+HOST = "localhost"
+USER = "postgres"
+PASSWORD = "postgres"
+DATABASE_NAME = "Decoupler"
+PORT = "5432"
+SHEMA = "Decoupler"
+
+# CL
+CODE = "CODE"
+ELECTRICALTRAIN = "ELECTRICALTRAIN"
+VOLTAGELEVEL = "VOLTAGELEVEL"
+ROOMORIGINATING = "ROOMORIGINATING"
+ROOMORIGINATING_CODE = "ROOMORIGINATING(CODE)"
+ROOMTERMINATING_CODE = "ROOMTERMINATING(CODE)"
+ROOMTERMINATING = "ROOMTERMINATING"
+
+# GP
+CABLE = "CABLE"
+ORDER = "ORDER"
+ELEMENT = "ELEMENT"
+
+# PL <-> CL
+
+# Decoupler
+FIRST = "first"
+LAST = "last"
+
+# Final List <- CL
+FROM_LOCATION = "FROM(LOCATION)"
+END_LOCATION = "END(LOCATION)"
+
+# Finish program message
+STATUS_TRUE = "Process is ended without error"
+
+## write color line {
+
+# cell color
+COLOR_GREEN = "#0BC000"
+COLOR_DARK_GREEN = "#067100"
+# cell format
+CELL_FORMAT_HEADER = {"bg_color": COLOR_DARK_GREEN, "bold": True}
+CELL_FORMAT_MODIFIED_CELL = {"bg_color": COLOR_GREEN, "bold": True}
+
+## }
